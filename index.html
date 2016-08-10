@@ -7,15 +7,17 @@
 </head>
 
 <body>
-    <div>
-        <div id="counter" class="count"></div>
-        <div id="fingers" class="divide"></div>
-        <div id="toes" class="divide"></div>
+    <div class="top">
+        <div id="fingers" class="text left">Fingers</div>
+        <div id="toes" class="text right">Toes</div>
+        <div id="counter" class="text count">0</div>
     </div>
-    <div>
-        <input id="number" type="number" value="0" />
-        <input id="reset" type="button" onclick="toggle()" value="start" />
-        <input id="restart" type="button" onclick="restart()" value="restart" />
+    <div class="bottom">
+        <div>
+            <input class="text" id="number" type="number" value="0" />
+        </div>
+        <input class="text btn left" id="reset" type="button" onclick="toggle()" value="start" />
+        <input class="text btn right" id="restart" type="button" onclick="restart()" value="restart" />
     </div>
     <script src="script.js"></script>
 </body>

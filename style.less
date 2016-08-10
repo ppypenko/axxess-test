@@ -1,6 +1,80 @@
+@highlight: #3baa44;
+@back: #1531ae;
+@body: #97a5de;
+@button: #ffb400;
+html {
+    background-color: @back;
+    font-family: sans-serif;
+}
+
 body {
-    margin: auto;
+    position: relative;
+    background-color: @body;
     width: 60%;
-    min-width: 260px;
+    height: 300px;
+    max-width: 300px;
+    min-width: 240px;
+    margin: auto;
+    margin-top: 100px;
     text-align: center;
+    border-radius: 12px;
+}
+
+span {
+    display: inline-flex;
+    align-items: center;
+}
+
+.parent {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+}
+
+.top {
+    top: 0;
+    .parent;
+}
+
+.bottom {
+    bottom: 0;
+    .parent;
+}
+
+.text {
+    width: 45%;
+    margin: auto;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.count {
+    margin-top: 70px;
+}
+
+.left {
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.right {
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.btn {
+    background-color: @button;
+    margin: 6px;
+    height: 50px;
+    :hover {
+        background-color: darken(@button, 10%);
+    }
+}
+
+.highlight {
+    background-color: lighten(@body, 15%);
 }
